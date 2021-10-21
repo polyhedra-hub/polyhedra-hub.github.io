@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleCyberpunkSurvival.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="services2.html">Services</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+  <img id = "keeb1" src="keeb1.jpg">
+  <h1>Want to build your own macropad?</h1>
+  <br>
+  <p> In this course we will build a small Arduino powered macropad from the scratch.
+    You will learn the basics of fabrication, electronics, and programming, all through making your own keyboard.
+    <br><br>
+
+
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+  <div class="text">
+    <p>Course will be divided into 6 classes in which you will become familiar with the drawing and creating your own case, soldering, programming and flashing your own firmware, as well as assembling the keyboard.<br> <br>Course is beginner friendly so no previous knowledge of electronics, or programming is required.<br><br>Every class is hour and a half long.<br> Price of the course is 50 eur.
+      <br><br>
+      <a href="curiculum srb.pdf">Curiculum</a><br><br>
+      <a href="https://forms.gle/VKEqJrkFSMQr6xG28">Apply</a> here
+    </p>
+  </div>
+</section>
+<img id="down" width="500px"src="IMG_0170.jpg" alt="">
+<img id="down" width="500px"src="IMG_0172.jpg" alt="">
+<div class= "news-container">
+  <div class = "title">
+    >>!
+  </div>
+
+  <ul>
+    <li>
+      Electronics 101 Course, 01.11.2021 start date
+    </li>
+    <li>
+      Ceramics Workshop, 11.12.2021 start date
+    </li>
+    <li>
+      Cyberpunk Survival Keyboard Making Workshop is in progress
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>

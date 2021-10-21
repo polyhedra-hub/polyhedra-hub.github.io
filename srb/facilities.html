@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleFacilities.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Početna</a>
+        <a href="services3.html">Usluge</a>
+        <a href="#">Oprema i alati</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="about.html">O nama</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+
+
+
+
+
+
+  <div class = "content active">
+    <h1>Oprema & alati.</h1>
+    <p>Veći deo izrade prototipa se radi u našim prostorijama, uključujući mašinsku obradu. rezanje, graviranje, 3D štampu i slično. Naše prostorije su registrovane kao fab lab u globalnom fab lab registru pod pokroviteljstvom Fab Foundation i otvene su za javnost tokom uobičajenog radnog vremena.
+
+Od 2017, Polyhedra fab lab je uvela članarine koje sa sobom donose mnoge pogodnosti, uključujući 50% subvencija na cenu specijalnih alata i dostupnih materijala koju pokrivaju Polyhedra i njeni partneri, kao i pristup prostorijama 24×7. Članarine su simbolične i iznose 100 RSD/mesečno i plaćaju se jednom godišnje za preostale mesece u godini..</p>
+<p>
+  Cenovnik:
+  <br>
+  <br>
+
+  Oprema:<br>
+  FDM 3D štampaći: 240 RSD/hr <br>
+  Paste Extruder 3D štampači: 600 RSD/hr <br>
+  SLA/DLP 3D štampači: 600 RSD/hr <br>
+  CNC graverice: 600 RSD/hr <br>
+  CNC ruteri: 1200 RSD/hr <br>
+  Laserske graverice: 600 RSD/hr <br>
+  Laserski sekači: 1200 RSD/hr <br>
+  Vinil sekači: 240 RSD/hr <br>
+<br><br>
+  Materijali: <br>
+  Colorfabb PLA Regular: 30 RSD/g <br>
+  Colorfabb PLA Special: 60 RSD/g <br>
+  Za kompletnu listu dostupnih materijala, kontaktirajte nas na info@polyhedra.co.
+<br><br>
+  Rad: <br>
+  Asistencija: 1200 RSD/hr
+</p>
+  </div>
+
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>

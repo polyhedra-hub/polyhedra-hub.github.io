@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+  <div id="preloader"></div>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="#">Home</a>
+        <a href="services3.html">Services</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="about.html">About</a>
+        <a href="./srb/index.html">SRB</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+
+
+
+
+
+
+  <div class = "content active">
+    <h1>Learn.<br><span>Electronics  <span style ="color:red">101</span></span></h1>
+    <p>Do you want to start playing with electronics but don't have any previous knowledge and everything seems too complicated?<br><br> Did you ever want to make a simple project with electronics but instructions weren't clear enough and you don't know where to ask for help?<br><br> This is the right place for you!
+
+Come and learn the basics of electronics through fun and easy maker projects. We will be soldering basic components that are used in many DIY projects and have such a variety of functions that you can make many different thingies by slightly modifying what you already made.
+
+Each term in this workshop is dedicated to making one project, so it's not necessary to come every time, but it is definitely recommended to participate in every project as some of them can be combined to make a different device in the end. <br>
+<br>
+Price : 1000 rsd / class</p>
+
+<a href="https://forms.gle/aCVQbWMJkweCAbUD9">Apply here</a>
+
+
+  </div>
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+
+</section>
+
+<div class= "news-container">
+  <div class = "title">
+    >>!
+  </div>
+
+  <ul>
+    <li>
+      Electronics 101 Course --> 15.11.2021
+    </li>
+    <li>
+      #### Apply Now ####
+    </li>
+    <li>
+      Cyberpunk Survival --> 25.11.2021
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+<script>
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+  })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleServices.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Početna</a>
+        <a href="services3.html">Usluge</a>
+        <a href="facilities.html">Oprema i alati</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="#">O nama</a>
+      </div>
+    </div>
+  </header>
+
+<section class="home">
+
+
+
+
+
+
+  <div class = "content active">
+    <h1>O nama.</h1>
+    <p>Mi zaista verujemo u moć inovacije. Ali, takođe verujemo da velike ideje ostaju samo ideje bez jakog tima koji ima znanja i iskustva da ideju iznese na tržište, na pravi način. Kako smo se i sami susreli sa ovim izazovima, oformili smo specijalnu operativnu grupu speijalizovanu za svaki aspekt proizvodnog ciklusa. Multifunkcionalni tim sa pravim miksom znanja, iskustva, kreativnosti, preciznosti, ljubavi i strasti da svaku ideju pretvore u uspešnu priču.</p>
+  </div>
+    <h1>Kontaktiraj nas.</h1>
+  <br>
+  <form action="https://formsubmit.co/lukanikolic42@gmail.com" method="POST">
+     <input type="hidden" name="_subject" value="New submission!">
+     <input type="text" name="name" placeholder="Vaše ime" required>
+     <input type="email" name="email" placeholder="Email Adresa" required>
+     <br>
+     <br>
+     <input type="text" name = "subject" placeholder="Tema" required>
+     <input type="text" name = "message" placeholder="Vaša poruka" required>
+     <button type="submit">Pošalji</button>
+
+  </form>
+
+  <div class = "media-icons">
+    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+
+  </div>
+
+</div>
+<div id="mapa">
+  <h1>Gde se nalazimo?</h1>
+  <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1190.3600598055727!2d20.444250699939865!3d44.79773815676152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71d0c7f58b0b%3A0x29d360146b0e4b78!2zSnVnb8WhcGVk!5e0!3m2!1ssr!2srs!4v1634661630918!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+</div>
+
+</section>
+
+
+
+
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+
+</body>
+</html>

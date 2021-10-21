@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset = 'utf-8'>
+  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+  <title> Polyhedra Fab Lab </title>
+  <link rel="icon" href="icon.png">
+  <link rel = "stylesheet" href = "styleServices3.css">
+  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <img src="logoph.png" width="250px">
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Početna</a>
+        <a href="#">Usluge</a>
+        <a href="facilities.html">Oprema i alati</a>
+        <a href="https://polyhedralab.blogspot.com/">Blog</a>
+        <a href="about.html">O nama</a>
+      </div>
+    </div>
+  </header>
+
+<section>
+  <div class = "content">
+
+    <h2> FORMULACIJA IDEJE.</h2>
+    <p id="front">Naši eksperti će Vam pomoći da formulišete Vašu ideju za proizvod, analizirate tržište i definišete neophodne korake za početak dizajna i razvoj prozvoda.</p>
+    <img id="first"src="idea.jpg">
+</div>
+</section>
+
+
+<section>
+
+  <div class = "content">
+    <h2> INDUSTRIJSKI DIZAJN</h2>
+    <p>Naši dizajneri kreiraju beleške, nacrte i industrijski dizajn Vašeg proizvoda, aplikacija i prezentacija baziranim na Vašim idejama i zahtevima.</p>
+    <img id="ind" src="ind.jpg">
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> RAZVOJ HARDVERA I SOFTVERA</h2>
+    <p>Naši inženjeri razvijaju harverske i softverske komponente Vašeg proizvoda – mašinski sklopovi, elektronika, fimver, aplikacije, prezentacije i slično.</p>
+    <img id="hw" src="hw.jpg">
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> IZRADA PROTOTIPA</h2>
+    <p>Naši mejkeri izrađuju funkcionalne prototipove ili radne verzije Vašeg proizvoda koristeći alate za digitalnu fabrikaciju u našim prostorijama.</p>
+    <img id="hw" src="rapid.jpg">
+  </div>
+</section>
+<section>
+  <div class = "content">
+    <h2> TESTIRANJE TRŽIŠTA</h2>
+    <p>Naši eksperti za onlajn kampanje pripremaju, vode i prate kampanje javnog finansiranja kao što su Kickstarter ili Indiegogo.</p>
+    <img id="val" src="validation.png">
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  contents.forEach((content) => {
+    content.classList.remove("active");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.add("active");
+  contents[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
+<script src="scroll-out.js"></script>
+<script type="text/javascript">
+  ScrollOut({
+    targets: 'h2, p'
+  })
+  </script>
+</body>
+</html>

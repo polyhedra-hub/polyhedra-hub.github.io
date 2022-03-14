@@ -1,159 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset = 'utf-8'>
-  <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
-  <title> Polyhedra Fab Lab </title>
-  <link rel="icon" href="icon.png">
-  <link rel = "stylesheet" href = "style.css">
-  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-</head>
-<body>
-  <div id="preloader"></div>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>CSS SNAP EFFECT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <div class="container">
+          <section class="one">
+            <header>
+              <img src="LOGO2inverted.png" width="250px">
+              <div class="menu-btn"></div>
+              <div class="navigation">
+                <div class="navigation-items">
+                  <a href="#">Home</a>
+                  <a href="workshops.html">Workshops</a>
+                  <a href="services3.html">Services</a>
+                  <a href="facilities.html">Facilities</a>
+                  <!-- <a href="https://polyhedralab.blogspot.com/">Blog</a> -->
+                  <a href="about.html">About</a>
+                  <a href="./sr/index.html">SRB</a>
+                </div>
+              </div>
+              <div class = "media-icons">
+                <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
+                <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
+                <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
+                <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
+            
+              </div>
+            </header>
+            <div class = "content">
+                <h1><span style="color:red">Workshop:</span><br><span style="color: rgb(255, 255, 255);">Mechanical Keyboards</span></h1>
+                <p id="white">Want to learn how to build your own mechanical macropad from the scratch. From the laser cutting, to the programming and wiring, we will help you build your own K33b. </p>
+                
+                <a href= "cyberpunkSurvival.html"><span style="color: rgb(146, 175, 255);">  Read More</span> </a>
+            
+              </div>
+              
+          </section>
+          <section class="two">
+            <div class = "content">
+              <h1><span style="color:red">Workshop:</span><br><span style="color: rgb(255, 255, 255);">Electronics 101<br><br><br></span></h1>
+                <p id="second">The workshop serves to master the basics of electronics, get acquainted with electronic components and learn to read electronic circuits </p>
+                
+                <a href= "cyberpunkSurvival.html"><span style="color: rgb(146, 175, 255);">  Read More</span> </a>
+          
+            </div>
+          </section>
+          <section class="three">
+              <div class = "content">
+                
+                <h1 id="three"><span style="color:red">Workshop:</span><br><span>Arduino <span>Programming</span></span></h1>
+                <p id="white">Are you interested in robotics and want to learn the basics of Arduino? This workshop leads from simple Timer projects, to more complex ones in order to master the basic program concepts. </p>
+                
+                <a href= "cyberpunkSurvival.html">Read More </a>
+            
+              </div>
+          </section>
+          <section class="four">
+            <div class = "content">
+              <h1><span style="color:red">Event:</span><br><span>Makers <span>Day</span></span></h1>
+              <p id="short">Every Saturday we organize Maker's Day, where we put together small one-day make-up projects. </p>
+              
+              <a href= "cyberpunkSurvival.html">Read More </a>
+          
+            </div>
+          </section>
+        </div>
+        <script type="text/javascript">
+          //Javascript of responsive navigation menu
+          const menuBtn = document.querySelector(".menu-btn");
+          const navigation = document.querySelector(".navigation");
+          
+          menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+          });
+          </script>
 
-  <header>
-    <img src="logoph.png" width="250px">
-    <div class="menu-btn"></div>
-    <div class="navigation">
-      <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="services3.html">Services</a>
-        <a href="facilities.html">Facilities</a>
-        <a href="https://polyhedralab.blogspot.com/">Blog</a>
-        <a href="about.html">About</a>
-        <a href="./sr/index.html">SRB</a>
-      </div>
-    </div>
-  </header>
-
-<section class="home">
-   <video class="video-slide active" src="4i.mp4" playsinline autoplay muted loop></video>
-   <video class="video-slide" src="2.mp4" playsinline autoplay muted loop></video>
-   <video class="video-slide" src="3.mp4" playsinline autoplay muted loop></video>
-   <video class="video-slide" src="1.mp4" playsinline autoplay muted loop></video>
-   <video class="video-slide" src="5.mp4" playsinline autoplay muted loop></video>
-
-
-
-
-
-  <div class = "content active">
-    <h1>Workshops.<br><span>Cyberpunk <span style ="color:red">survival</span></span></h1>
-    <p id="white">Want to learn how to build your own mechanical macropad from the scratch. From laser cutting your own case, to the programming and wiring, we will help you build your own K33b. </p>
-    <img data-tilt  class = "image" src = "1.gif" >
-    <a href= "cyberpunkSurvival.html">Read More </a>
-
-  </div>
-  <div class = "content">
-    <h1>Services.<br><span>Rapid Prototyping</span></h1>
-    <p>Do you have a new product idea? We can help you bring it to life.</p>
-    <a href= "services3.html">Read More </a>
-  </div>
-  <div class = "content">
-    <h1>Facilities.<br><span>Use Our Tools</span></h1>
-    <p id="white">You have the skills, but lacking proper workshop. Come and use our machines.</p>
-    <a href= "facilities.html">Read More </a>
-  </div>
-  <div class = "content">
-    <h1>Learn.<br><span>Electronics 101</span></h1>
-    <p >A beginners guide to Electronics, apply today.</p>
-    <a href= "electronics.html">Read More </a>
-  </div>
-  <div class = "content">
-    <h1>Support.<br><span>Become a part of our community</span></h1>
-    <p>.</p>
-
-    <a href= "support.html">Read More </a>
-  </div>
-  <div class = "media-icons">
-    <a href = "https://discord.gg/dGw4bq3mDC"> <i class = "fab fa-discord"></i> </a>
-    <a href = "https://sr-rs.facebook.com/Polyhedra3D/"> <i class = "fab fa-facebook-f"></i> </a>
-    <a href = "https://www.instagram.com/polyhedra3d/"> <i class = "fab fa-instagram"></i> </a>
-    <a href = "https://twitter.com/polyhedra3d"> <i class = "fab fa-twitter"></i> </a>
-
-  </div>
-  <div class = "slider-navigation">
-    <div class = "nav-btn active"></div>
-    <div class = "nav-btn"></div>
-    <div class = "nav-btn"></div>
-    <div class = "nav-btn"></div>
-    <div class = "nav-btn"></div>
-  </div>
-</section>
-
-<div class= "news-container">
-  <div class = "title">
-    >>!
-  </div>
-
-  <ul>
-    <li>
-      Electronics 101 Course --> 10.11.2021
-    </li>
-    <li>
-      #### Apply Now ####
-    </li>
-    <li>
-      Cyberpunk Survival --> 25.11.2021
-    </li>
-  </ul>
-</div>
-
-
-
-<script type="text/javascript">
-//Javascript of responsive navigation menu
-const menuBtn = document.querySelector(".menu-btn");
-const navigation = document.querySelector(".navigation");
-
-menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("active");
-  navigation.classList.toggle("active");
-});
-
-//Javascript for video slider navigation
-const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".video-slide");
-const contents = document.querySelectorAll(".content");
-
-var sliderNav = function(manual){
-  btns.forEach((btn) => {
-    btn.classList.remove("active");
-  });
-
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-  contents.forEach((content) => {
-    content.classList.remove("active");
-  });
-
-  btns[manual].classList.add("active");
-  slides[manual].classList.add("active");
-  contents[manual].classList.add("active");
-}
-
-btns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    sliderNav(i);
-  });
-});
-
-
-
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/tilt.jquery.js"></script>
-<script>
-  var loader = document.getElementById("preloader");
-
-  window.addEventListener("load", function(){
-    loader.style.display = "none";
-  })
-
-
-</script>
-
-</body>
+        <script>
+            var loader = document.getElementById("preloader");
+          
+            window.addEventListener("load", function(){
+              loader.style.display = "none";
+            })
+          
+          
+          </script>
+    </body>
 </html>

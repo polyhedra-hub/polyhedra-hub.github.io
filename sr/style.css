@@ -251,3 +251,20 @@ header .navigation .navigation-items a:hover:before {
     transition: 0.2s ease;
   }
 }
+
+@media (max-width: 900px) {
+  .content h1 {
+    font-size: 200%;
+    margin-top: 0;
+  }
+  #visevise {
+    font-size: 120%;
+  }
+
+  .one {
+    background-image: url('../keeb.GIF');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

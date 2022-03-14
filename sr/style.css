@@ -250,21 +250,30 @@ header .navigation .navigation-items a:hover:before {
     background-position: center;
     transition: 0.2s ease;
   }
+  .container img {
+    margin-top: -170px;
+  }
+  .menu-btn {
+    margin-top: -170px;
+  }
+  .content h1 {
+    margin-top: -200px;
+  }
 }
 
 @media (max-width: 900px) {
   .content h1 {
-    font-size: 200%;
-    margin-top: 0;
+    font-size: 240%;
+    margin-top: -360px;
   }
   #visevise {
     font-size: 120%;
   }
 
-  .one {
-    background-image: url('../keeb.GIF');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  .container img {
+    margin-top: -170px;
+  }
+  .menu-btn {
+    margin-top: -170px;
   }
 }

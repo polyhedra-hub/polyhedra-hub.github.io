@@ -340,11 +340,16 @@ header .navigation .navigation-items a:hover:before {
 }
 @media (max-width: 900px) {
   .content h1 {
-    font-size: 240%;
+    font-size: 30px;
     margin-top: -100px;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+  .content p {
+    font-size: 10px;
   }
   #visevise {
-    font-size: 120%;
+    font-size: 40%;
   }
 
   .container img {

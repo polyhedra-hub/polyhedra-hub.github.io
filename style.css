@@ -235,6 +235,11 @@ header .navigation .navigation-items a:hover:before {
   color: #fff;
   width: 52%;
 }
+
+#vise {
+  background-color: #000;
+  color: rgb(133, 133, 255);
+}
 @media (max-width: 1040px) {
   .home .content h1 {
     font-size: 1.8em;
